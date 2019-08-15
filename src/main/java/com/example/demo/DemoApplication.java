@@ -18,9 +18,12 @@ public class DemoApplication {
 	}
 	@GetMapping("/foo")
 	String foo() {
-		return "drone build ok！";
+		return "drone build foo ok！";
 	}
 
+	String bar() {
+		return "drone build  bar ok！";
+	}
 
 
 }
