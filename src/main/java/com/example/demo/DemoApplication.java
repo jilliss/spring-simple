@@ -20,7 +20,7 @@ public class DemoApplication {
 	String foo() {
 		return "drone build foo ok！";
 	}
-
+	@PostMapping("/pbar")
 	String bar() {
 		return "drone build  bar ok！";
 	}
