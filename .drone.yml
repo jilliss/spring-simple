@@ -6,12 +6,11 @@ steps:
   image: maven:3-jdk-10
   commands:
   - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
-  - mvn test -B
-- name: bulid
+  - mvn -v
+  - echo 'test'
+- name: build
   image: maven:3-jdk-10
   commands:
-  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
-  - mvn -v
-  - mvn spring-boot:run
-
-  
+    - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+    - echo 'build'
+    - mvn spring-boot:run
