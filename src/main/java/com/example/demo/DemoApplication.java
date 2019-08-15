@@ -18,7 +18,7 @@ public class DemoApplication {
 	}
 	@GetMapping("/foo")
 	String foo() {
-		return "drone build ok";
+		return "drone build ok！";
 	}
 
 
